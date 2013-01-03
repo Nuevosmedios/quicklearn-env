@@ -6,7 +6,7 @@ from django.utils.translation import ugettext_lazy as _
 from django.utils.encoding import smart_unicode
 
 # These values, if given to validate(), will trigger the self.required check.
-EMPTY_VALUES = (None, '', [], (), {})
+EMPTY_VALUES = (None, '', [], (), {}, [None, None])
 
 try:
     from django.conf import settings
