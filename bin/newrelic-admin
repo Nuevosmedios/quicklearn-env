@@ -1,0 +1,9 @@
+#!/var/quicklearn-env/bin/python2.6
+# EASY-INSTALL-ENTRY-SCRIPT: 'newrelic==1.9.0.21','console_scripts','newrelic-admin'
+__requires__ = 'newrelic==1.9.0.21'
+import sys
+from pkg_resources import load_entry_point
+
+sys.exit(
+   load_entry_point('newrelic==1.9.0.21', 'console_scripts', 'newrelic-admin')()
+)
